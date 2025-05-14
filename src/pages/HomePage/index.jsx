@@ -21,13 +21,13 @@ export const HomePage = () => {
               value={currency}
               onChange={handleCurrencyChange}
             >
-              <option value="USD">Americký dolar</option>
+              <option value="USD">Americký dolar </option>
               <option value="EUR">Euro</option>
               <option value="GBP">Britská libra</option>
             </select>
           </div>
         </form>
-        <Rate />
+        <Rate from={currency} />
       </div>
     </div>
   );
